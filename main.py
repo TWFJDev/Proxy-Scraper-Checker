@@ -41,7 +41,10 @@ if menu_selection.result_name == main_menu_choices[0]:
 
     start = time.time()
 
-    count = scrape(protocol=proxy_type.result_name.lower(), anonymity=anonymity.result_name.lower())
+    count = scrape(
+        protocol=proxy_type.result_name.lower(), 
+        anonymity=anonymity.result_name.lower()
+    )
 
     finish = time.time() - start
 
