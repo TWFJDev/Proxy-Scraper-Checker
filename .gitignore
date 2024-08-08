@@ -166,3 +166,4 @@ cython_debug/
 _temp
 bot.sqlite
 .linux
+.sqlite
