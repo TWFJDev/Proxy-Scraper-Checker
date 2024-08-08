@@ -4,9 +4,26 @@ import time
 
 clear_terminal()
 
-main_menu_choices = ['Scrape Proxies', 'Check Proxies', 'Proxy Count', 'Export', 'Exit']
-proxy_menu_choices = ['All', 'Http', 'Https', 'Socks4', 'Socks5']
-anonymity_menu_choices = ['All', 'Transparent (Personal IP Can Still Be Retrieved)', 'Anonymous (Personal IP Doesnt Make It Through But The Service Can See Its A Proxy)', 'Elite (Personal IP Doesnt Make It Through And The Service Cannot Tell You\'re Using A Proxy)']
+main_menu_choices = [
+    'Scrape Proxies', 
+    'Check Proxies', 
+    'Proxy Count', 
+    'Export', 
+    'Exit'
+]
+proxy_menu_choices = [
+    'All', 
+    'Http', 
+    'Https', 
+    'Socks4', 
+    'Socks5'
+]
+anonymity_menu_choices = [
+    'All', 
+    'Transparent (Personal IP Can Still Be Retrieved)', 
+    'Anonymous (Personal IP Doesnt Make It Through But The Service Can See Its A Proxy)', 
+    'Elite (Personal IP Doesnt Make It Through And The Service Cannot Tell You\'re Using A Proxy)'
+]
 
 menu_selection = select(
     instruction='(Use The Arrow Keys To Navigate And Enter To Pick An Option!)',
