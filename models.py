@@ -17,20 +17,18 @@ class Proxies(base):
     https = Column(String(150), nullable=True)
     socks4 = Column(String(150), nullable=True)
     socks5 = Column(String(150), nullable=True)
-    ssl = Column(String(150), nullable=True)
     country = Column(String(150), nullable=True)
     anonymity = Column(String(150), nullable=True)
     status = Column(String(150), nullable=True, default='Not Checked')
     last_checked = Column(String(150), nullable=True)
 
-    def __init__(self, ip_address, port, http, https, socks4, socks5, ssl, country, anonymity, status, last_checked):
+    def __init__(self, ip_address, port, http, https, socks4, socks5, country, anonymity, status, last_checked):
         self.ip_address = ip_address
         self.port = port
         self.http = http
         self.https = https
         self.socks4 = socks4
         self.socks5 = socks5
-        self.ssl = ssl
         self.country = country
         self.anonymity = anonymity
         self.status = status
